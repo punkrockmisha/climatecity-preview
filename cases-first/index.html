@@ -1,0 +1,540 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Квартира · шапка, риски и решения</title><style>@font-face{font-family:Manrope;font-style:normal;font-weight:400;src:url(../assets/font-4d150da6bb44.woff2) format("woff2");}@font-face{font-family:Manrope;font-style:normal;font-weight:600;src:url(../assets/font-f3efd1a30e7d.woff2) format("woff2");}@font-face{font-family:Manrope;font-style:normal;font-weight:700;src:url(../assets/font-131b620c364d.woff2) format("woff2");}
+*{box-sizing:border-box}html{background:white}body{margin:0;font-family:Manrope,sans-serif;color:#2e2f33;background:white;font-size:14px;line-height:1.55}h2,h3,p{margin:0}h2{font-size:34px;line-height:1.2;letter-spacing:-.9px;font-weight:700;margin-bottom:30px}sub{font-size:.65em;line-height:0}.blocks{width:min(100%,1240px);padding:48px 30px 46px;margin:0 auto}.risks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:stretch}.risk{display:grid;grid-template-rows:116px 82px 132px 1fr;border:1px solid #e1e3e6;border-radius:12px;padding:12px 12px 18px;overflow:hidden;background:#fff}.risk img{display:block;width:100%;height:116px;object-fit:cover;border-radius:7px}.risk h3{padding-top:15px;font-size:21px;line-height:1.2;letter-spacing:-.6px;font-weight:700;overflow-wrap:normal}.risk h3 span{display:block;margin-top:6px;font-size:13px;line-height:1.4;font-weight:600;letter-spacing:0;min-height:37px}.label{display:block;color:#85898e;font-size:10px;line-height:1.4;letter-spacing:.4px;margin-bottom:8px}.risk p{text-align:left;text-wrap:pretty;hyphens:none;overflow-wrap:normal;word-break:normal;font-size:13px;line-height:1.6;letter-spacing:0}.source{padding:14px 0 16px}.effect{padding-top:15px;border-top:1px solid #e5e7e9}.risk b{color:#2e2f33;font-weight:700}.comparison{margin-top:48px;padding-top:40px;border-top:1px solid #e1e3e6}.table-wrap{width:100%}table{width:100%;table-layout:fixed;border-spacing:0;border-collapse:separate;overflow:hidden;border:1px solid #e1e3e6;border-radius:12px;font-size:14px}th,td{text-align:center;padding:15px 12px;line-height:1.45;vertical-align:middle;border:0;border-bottom:1px solid #e8e9eb}thead th{height:84px;background:#f6f7f8;font-size:12px;line-height:1.45;font-weight:700;position:relative}thead th:last-child:before{content:'';position:absolute;top:0;left:20%;right:20%;height:3px;background:#8c0a2b;border-radius:0 0 3px 3px}th:first-child,td:first-child{width:42%;text-align:left;padding-left:20px;padding-right:20px}th:first-child{font-size:11px;color:#85898e;font-weight:400}td+td,th+th{border-left:1px solid #f0f1f2}tbody tr:last-child td{border-bottom:0}tbody tr:hover td{background:#fafafb}.status{width:22px;height:22px;display:inline-flex;justify-content:center;align-items:center;border-radius:50%;font-size:16px;line-height:1;font-weight:600}.yes{color:#378260;background:#edf4ef}.no{color:#b3b6bb;background:transparent;font-weight:400}.notes{font-size:11px;color:#85898e;line-height:1.7;margin-top:17px}.short{display:none}
+@media(max-width:650px){.blocks{padding:28px 16px 32px}h2{font-size:27px;letter-spacing:-.7px;margin-bottom:24px}.risks{display:flex;flex-direction:column;gap:14px}.risk{display:grid;grid-template-columns:minmax(0,1fr) 88px;grid-template-rows:auto auto auto;column-gap:10px;padding:16px;min-height:0;overflow:hidden}.risk img{grid-column:2;grid-row:1;height:68px;width:88px;object-fit:cover}.risk h3{grid-column:1;grid-row:1;padding:0;min-height:70px;font-size:20px;letter-spacing:-.5px;align-self:start}.risk h3 span{font-size:12px;min-height:0;margin-top:6px}.source{grid-column:1/-1;padding:14px 0}.effect{grid-column:1/-1;padding-top:14px}.risk p{font-size:13px;line-height:1.6;text-wrap:pretty}.label{font-size:10px;margin-bottom:7px}.comparison{margin-top:32px;padding-top:28px}table{font-size:12px;border-radius:10px}thead th{font-size:10.5px;height:82px;padding:10px 2px;line-height:1.4}th:first-child,td:first-child{width:42%;padding-left:10px;padding-right:8px}th:first-child{font-size:10px}td{padding:13px 2px;line-height:1.5}thead th:last-child:before{left:20%;right:20%;height:2px}.status{width:19px;height:19px;font-size:14px}.notes{font-size:10px;line-height:1.6;margin-top:15px}.long{display:none}.short{display:inline}}
+
+@media(min-width:651px){.source-line{display:block;white-space:nowrap}.source p{text-wrap:initial}}
+@media(max-width:650px){.source-line{display:inline;white-space:normal}}
+
+@media(min-width:651px){.effect-line{display:block;white-space:nowrap}.effect p{text-wrap:initial}.risk{grid-template-rows:116px 82px 112px 132px}}
+@media(max-width:650px){.effect-line{display:inline;white-space:normal}.risk{grid-template-rows:auto auto auto}}
+@media(min-width:651px){.effect p{font-size:12.5px;line-height:1.68}}
+
+.status{font-weight:700;-webkit-text-stroke:.45px currentColor}.yes{color:#28764f;background:#e8f3ec}.no{color:#9299a2;font-weight:700;-webkit-text-stroke:.55px currentColor}
+
+.cc-apartment-hero h1{font-size:34px;line-height:1.2}
+@media(max-width:650px){.cc-apartment-hero h1{font-size:27px;line-height:1.2}}
+
+.blocks>h2{text-align:left}.comparison>h2{text-align:right}
+
+.blocks>h2.numbered-heading{display:flex;justify-content:space-between;align-items:baseline;gap:28px}.numbered-heading .heading-copy{min-width:0}.section-number{flex:none;font-size:28px;font-weight:400;line-height:1;letter-spacing:-.5px;font-variant-numeric:tabular-nums;color:#8d9197}
+@media(max-width:650px){.blocks>h2.numbered-heading{gap:18px;align-items:flex-start}.section-number{font-size:22px;padding-top:5px}}
+
+.comparison>h2.numbered-heading{display:flex;justify-content:space-between;align-items:baseline;gap:28px;text-align:right}.comparison .heading-copy{min-width:0}
+@media(max-width:650px){.comparison>h2.numbered-heading{gap:18px;align-items:flex-start}}
+
+.worksteps{margin-top:48px;padding-top:40px;border-top:1px solid #e1e3e6}.worksteps>h2{display:flex;align-items:baseline;justify-content:space-between;gap:28px;text-align:left}.worksteps-grid{display:grid;grid-template-columns:1fr 1.15fr 1.1fr;gap:30px;align-items:start}.worksteps-nav{display:flex;flex-direction:column;gap:0;padding:0}.worksteps-nav button{display:flex;gap:16px;align-items:baseline;text-align:left;background:none;border:0;border-bottom:1px solid #e8e9eb;border-radius:0;color:#969ba1;cursor:pointer;font:600 22px/1.35 Manrope,sans-serif;padding:18px 0;transition:color .15s}.worksteps-nav button:first-child{padding-top:3px}.worksteps-nav button span{font-size:12px;font-weight:400;flex:none}.worksteps-nav button[aria-selected=true]{color:#2e2f33}.worksteps-nav button:hover{color:#2e2f33}.worksteps-nav button:focus-visible{outline:2px solid #8c0a2b;outline-offset:5px}.worksteps-image{display:block;width:100%;height:340px;object-fit:cover;border-radius:10px}.worksteps-copy p{font-size:16px;line-height:1.7;margin:0 0 18px;text-wrap:pretty}.worksteps-copy[hidden]{display:none}.worksteps-mobile{display:none}
+@media(max-width:650px){.worksteps{margin-top:32px;padding-top:28px}.worksteps>h2{align-items:flex-start;gap:18px}.worksteps-grid{display:none}.worksteps-mobile{display:block}.worksteps-mobile details{border-top:1px solid #e1e3e6}.worksteps-mobile details:last-child{border-bottom:1px solid #e1e3e6}.worksteps-mobile summary{display:flex;gap:12px;align-items:baseline;list-style:none;font-size:19px;font-weight:600;line-height:1.4;padding:17px 0;cursor:pointer}.worksteps-mobile summary::-webkit-details-marker{display:none}.worksteps-mobile summary span{font-size:11px;font-weight:400;color:#969ba1}.worksteps-mobile summary:after{content:'+';font-size:20px;margin-left:auto;font-weight:400;color:#969ba1}.worksteps-mobile details[open] summary{color:#2e2f33}.worksteps-mobile details[open] summary:after{content:'−'}.worksteps-mobile .step-body{padding:0 0 20px 27px}.step-body p{font-size:13px;line-height:1.65;margin:0 0 12px}.step-body p:last-child{margin-bottom:0}}
+.worksteps-image[hidden]{display:none!important}.worksteps-copy{grid-column:3;grid-row:1}.worksteps-image{grid-column:2;grid-row:1}.worksteps-nav{grid-column:1;grid-row:1}.worksteps-mobile .step-body{padding-left:0}
+
+.worksteps-v2{margin-top:48px;padding-top:40px;border-top:1px solid #e1e3e6}.worksteps-v2>h2{display:flex;justify-content:space-between;align-items:baseline;gap:28px;text-align:left}.worksteps-v2-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}.worksteps-v2-list details{border-top:1px solid #e1e3e6}.worksteps-v2-list details:last-child{border-bottom:1px solid #e1e3e6}.worksteps-v2-list summary{display:flex;align-items:baseline;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;font-size:23px;line-height:1.35;font-weight:600;padding:19px 0;color:#969ba1}.worksteps-v2-list summary::-webkit-details-marker{display:none}.worksteps-v2-list summary:after{content:'+';font-size:22px;font-weight:400;color:#969ba1}.worksteps-v2-list details[open]>summary{color:#2e2f33}.worksteps-v2-list details[open]>summary:after{content:'−';color:#2e2f33}.worksteps-v2-text{padding:0 36px 23px 0}.worksteps-v2-text p{font-size:15px;line-height:1.75;margin:0 0 13px;text-wrap:pretty}.worksteps-v2-text p:last-of-type{margin-bottom:0}.worksteps-v2-photo{width:100%;height:425px;display:block;object-fit:cover;object-position:center;border-radius:12px}.worksteps-v2-photo[hidden]{display:none!important}.worksteps-v2-mobile-photo{display:none}.worksteps-v2-list summary:focus-visible{outline:2px solid #8c0a2b;outline-offset:3px}
+@media(max-width:650px){.worksteps-v2{margin-top:32px;padding-top:28px}.worksteps-v2>h2{align-items:flex-start;gap:18px}.worksteps-v2-layout{display:block}.worksteps-v2-photos{display:none}.worksteps-v2-list summary{font-size:19px;padding:17px 0;line-height:1.4}.worksteps-v2-text{padding:0 0 20px}.worksteps-v2-text p{font-size:13px;line-height:1.65;margin-bottom:12px}.worksteps-v2-mobile-photo{display:block;width:100%;height:205px;object-fit:cover;object-position:center;border-radius:9px;margin-top:17px}}
+
+.status.no{color:#C84C54;background:#FBEDEE;font-size:16px;font-weight:700;-webkit-text-stroke:.45px currentColor}
+@media(max-width:650px){.status.no{font-size:14px}}
+.worksteps-v2-photo[data-step-photo-v2="04"]{object-fit:contain;background:#f6f7f8}
+
+.status.no{color:#C84C54;background:#FBEDEE;font-size:16px;font-weight:700;-webkit-text-stroke:.45px currentColor}
+@media(max-width:650px){.status.no{font-size:14px}}
+.worksteps-v2-photo[data-step-photo-v2="04"]{object-fit:contain;background:#f6f7f8}
+
+.worksteps-v2-photo,.worksteps-v2-photo[data-step-photo-v2="04"]{width:100%;height:auto!important;aspect-ratio:1/1;object-fit:cover!important;object-position:center;border-radius:12px;background:none}
+@media(max-width:650px){.worksteps-v2-mobile-photo{width:100%;height:auto!important;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:9px}}
+
+.worksteps-v2-text p{margin:0 0 13px;line-height:1.75}.worksteps-v2-text p:last-of-type{margin-bottom:0}.stage-line{display:block;white-space:nowrap}.stage-lines-mobile{display:none}
+@media(max-width:650px){.stage-lines-desktop{display:none}.stage-lines-mobile{display:block}.worksteps-v2-text p{line-height:1.65;margin-bottom:12px}}
+@media(max-width:370px){.worksteps-v2-text p{font-size:12px}}
+
+.worksteps-v2-text p{margin:0!important}.worksteps-v2-photos{aspect-ratio:1/1;overflow:hidden;border-radius:12px}.worksteps-v2-photo[data-step-photo-v2="04"]{transform:scale(1.2);transform-origin:50% 100%}.stage-photo-clip{display:none}
+@media(max-width:650px){.stage-photo-clip{display:block;width:100%;aspect-ratio:1/1;margin-top:17px;overflow:hidden;border-radius:9px}.stage-photo-clip .worksteps-v2-mobile-photo{display:block;width:100%;height:100%!important;aspect-ratio:1/1;margin:0;border-radius:0;object-fit:cover}.worksteps-v2-list details[data-step-v2="04"] .worksteps-v2-mobile-photo{transform:scale(1.2);transform-origin:50% 100%}}
+
+@media(min-width:651px){.worksteps-v2-layout{grid-template-columns:minmax(0,1fr) var(--stage-photo-size,410px);align-items:start}.worksteps-v2-photos{width:var(--stage-photo-size,410px);height:var(--stage-photo-size,410px);aspect-ratio:1/1}.worksteps-v2-photo,.worksteps-v2-photo[data-step-photo-v2="04"]{width:100%;height:100%!important;aspect-ratio:1/1}}
+@media(min-width:651px) and (max-width:950px){.worksteps-v2-layout{gap:32px}.worksteps-v2-list summary{font-size:20px}.worksteps-v2-text p{font-size:12px}}
+
+.popular-solutions{margin-top:48px;padding-top:40px;border-top:1px solid #e1e3e6}.popular-solutions>h2{display:flex;justify-content:space-between;align-items:baseline;gap:28px;text-align:left}.solution-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:'copy photo';gap:64px;align-items:center;padding:32px 0}.solution-row+.solution-row{border-top:1px solid #e8e9eb;margin-top:18px;padding-top:48px}.solution-row:nth-child(odd){grid-template-areas:'photo copy'}.solution-copy{grid-area:copy}.solution-copy h3{font-size:25px;font-weight:700;line-height:1.3;letter-spacing:-.5px;margin:0 0 22px}.solution-copy h3 span{display:block;font-size:21px;line-height:1.4;font-weight:600;letter-spacing:-.25px;color:#696f76;margin-top:7px}.solution-copy>p{font-size:15px;line-height:1.75;margin:0 0 24px;text-wrap:pretty}.solution-copy ul{list-style:none;margin:0;padding:0}.solution-copy li{position:relative;padding:10px 0 10px 19px;font-size:14px;line-height:1.55;border-top:1px solid #edf0f2;text-wrap:pretty}.solution-copy li:before{content:'';position:absolute;width:4px;height:4px;left:0;top:20px;background:#8c0a2b;border-radius:50%}.solution-image{grid-area:photo;display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:12px}.solution-row[data-solution="03"] .solution-image{object-position:center bottom}
+@media(max-width:650px){.popular-solutions{margin-top:32px;padding-top:28px}.popular-solutions>h2{align-items:flex-start;gap:18px}.solution-row,.solution-row:nth-child(odd){display:flex;flex-direction:column;align-items:stretch;gap:0;padding:10px 0 28px}.solution-row+.solution-row{margin-top:0;padding-top:28px}.solution-copy{display:contents}.solution-copy h3{order:0;font-size:21px;line-height:1.35;margin:0 0 19px;letter-spacing:-.4px}.solution-copy h3 span{font-size:17px;margin-top:6px;line-height:1.45}.solution-image{order:1;border-radius:10px;margin-bottom:20px}.solution-copy>p{order:2;font-size:13px;line-height:1.65;margin-bottom:18px}.solution-copy ul{order:3}.solution-copy li{font-size:12.5px;line-height:1.55;padding:10px 0 10px 17px}.solution-copy li:before{top:18px}}
+</style><section class="cc-apartment-hero" aria-labelledby="cc-apartment-title">
+  <div class="cc-apartment-hero__inner">
+    <h1 id="cc-apartment-title">Создание атмосферы в квартире — это искусство.</h1>
+    <p class="cc-apartment-hero__lead">Мы проектируем системы <strong>вентиляции</strong> и <strong>кондиционирования</strong>,<br class="cc-apartment-hero__desktop-break"> создавая в вашем доме современный оазис уюта и комфорта.</p>
+    <p class="cc-apartment-hero__detail">Подберем индивидуальное решение с учетом планировки<br class="cc-apartment-hero__desktop-break"> и особенностей интерьера.</p>
+    <form class="cc-apartment-hero__form" aria-label="Заявка на индивидуальное решение" onsubmit="return false;">
+      <div class="cc-apartment-hero__fields">
+        <input type="text" name="name" autocomplete="name" placeholder="Ваше имя" aria-label="Ваше имя" maxlength="100">
+        <input type="tel" name="phone" autocomplete="tel" placeholder="Номер телефона" aria-label="Номер телефона" maxlength="30">
+        <button type="button" disabled aria-disabled="true" title="Отправка заявки пока не подключена">Оставить заявку</button>
+      </div>
+      <label class="cc-apartment-hero__consent"><input type="checkbox" name="consent"><span>Согласен на <a href="https://climatecity.pro/content/2-confidential" target="_blank" rel="noopener">обработку персональных данных</a></span></label>
+    </form>
+  </div>
+</section>
+<style>
+.elementor-element.elementor-element-7589fabe{background:#626566!important;}
+.elementor-element-7589fabe > .elementor-motion-effects-container,.elementor-element-7589fabe > .elementor-background-overlay{display:none!important;}
+.elementor-element-7589fabe > .elementor-container{max-width:none!important;}
+.elementor-element-7589fabe .elementor-element-4512a8d > .elementor-column-wrap{padding:0!important;}
+.cc-apartment-hero{box-sizing:border-box;position:relative;isolation:isolate;overflow:hidden;background:#626566;color:#fff;font-family:Manrope,sans-serif;padding:70px 4.375vw;min-height:620px;display:flex;align-items:center;}
+.cc-apartment-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:#626566 url('../assets/image-071bf71aba2f.webp') right center/cover no-repeat;}
+.cc-apartment-hero__inner{width:100%;max-width:none;margin:0;}
+.cc-apartment-hero h1{font:700 clamp(30px,2.5vw,48px)/1.16 Manrope,sans-serif;letter-spacing:-.02em;text-align:left;text-transform:none;color:#fff;margin:0 0 28px;max-width:none;text-shadow:none;}
+.cc-apartment-hero__lead{font:400 clamp(22px,1.44vw,28px)/1.44 Manrope,sans-serif;color:#fff;margin:0 0 42px;max-width:1120px;text-align:left;}
+.cc-apartment-hero__lead strong{font-weight:700;color:#eaa760;}
+.cc-apartment-hero__detail{font:700 clamp(25px,1.75vw,32px)/1.32 Manrope,sans-serif;color:#fff;margin:0 0 44px;max-width:1100px;text-align:left;}
+.cc-apartment-hero__form{width:min(100%,910px);margin:0;padding:0;border:0;}
+.cc-apartment-hero__fields{display:grid;grid-template-columns:290fr 310fr 270fr;gap:20px;}
+.cc-apartment-hero__fields input,.cc-apartment-hero__fields button{box-sizing:border-box;width:100%;min-width:0;height:72px;border-radius:6px;font:400 23px/1.2 Manrope,sans-serif;box-shadow:none;margin:0;text-transform:none;}
+.cc-apartment-hero__fields input{background:#fff;color:#2e2f33;border:1px solid #fff;padding:0 22px;outline-offset:3px;}
+.cc-apartment-hero__fields input::placeholder{color:#777;opacity:1;}
+.cc-apartment-hero__fields input:focus-visible{outline:2px solid #eaa760;}
+.cc-apartment-hero__fields button,.cc-apartment-hero__fields button:disabled{background:#eaa760;color:#fff;border:0;padding:0 18px;font-weight:700;opacity:1;cursor:default;}
+.cc-apartment-hero__consent{display:flex;align-items:flex-start;gap:11px;margin:22px 0 0;color:#fff;font:400 16px/1.4 Manrope,sans-serif;cursor:pointer;}
+.cc-apartment-hero__consent input{box-sizing:border-box;flex:0 0 17px;appearance:auto;-webkit-appearance:checkbox;width:17px;height:17px;margin:3px 0 0;accent-color:#eaa760;position:static;opacity:1;}
+.cc-apartment-hero__consent span{display:block;}
+.cc-apartment-hero__consent a{color:inherit;text-decoration:none;}
+.cc-apartment-hero__consent a:hover{text-decoration:underline;}
+@media(min-width:1100px){.cc-apartment-hero h1{white-space:nowrap;}}
+@media(min-width:1800px){.cc-apartment-hero{min-height:690px;}}
+@media(min-width:768px) and (max-width:1099px){.cc-apartment-hero{padding:54px 32px;}.cc-apartment-hero h1{max-width:760px;}.cc-apartment-hero__desktop-break{display:none;}.cc-apartment-hero__lead{max-width:740px;}.cc-apartment-hero__detail{max-width:720px;}.cc-apartment-hero__fields{gap:14px;}.cc-apartment-hero__fields input,.cc-apartment-hero__fields button{font-size:19px;height:64px;}.cc-apartment-hero__fields input{padding:0 16px;}}
+@media(max-width:767px){
+.cc-apartment-hero{padding:30px 22px 34px;min-height:0;display:block;}
+.cc-apartment-hero::before{background-position:right center;}
+.cc-apartment-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(41,45,48,.68);}
+.cc-apartment-hero h1{font-size:29px;line-height:1.2;letter-spacing:-.02em;white-space:normal;margin-bottom:24px;}
+.cc-apartment-hero__lead{font-size:20px;line-height:1.35;margin-bottom:30px;}
+.cc-apartment-hero__desktop-break{display:none;}
+.cc-apartment-hero__detail{font-size:22px;line-height:1.32;margin-bottom:28px;}
+.cc-apartment-hero__fields{grid-template-columns:1fr;gap:14px;}
+.cc-apartment-hero__fields input,.cc-apartment-hero__fields button{height:56px;font-size:20px;}
+.cc-apartment-hero__fields button{height:58px;}
+.cc-apartment-hero__consent{font-size:13px;line-height:1.45;gap:10px;margin-top:20px;}
+.cc-apartment-hero__consent input{margin-top:1px;}
+}
+
+.cc-apartment-hero{min-height:620px;padding:64px 30px;font-family:Manrope,sans-serif}.cc-apartment-hero__inner{max-width:1180px;margin:0 auto}.cc-apartment-hero h1{font-size:clamp(28px,2.2vw,40px);line-height:1.2;margin-bottom:28px;font-family:Manrope,sans-serif}.cc-apartment-hero__lead{font-size:22px;line-height:1.5;margin-bottom:36px;font-family:Manrope,sans-serif}.cc-apartment-hero__detail{font-size:25px;line-height:1.4;margin-bottom:36px;font-family:Manrope,sans-serif}.cc-apartment-hero__form{max-width:880px}.cc-apartment-hero__fields input,.cc-apartment-hero__fields button{height:64px;font-family:Manrope,sans-serif;font-size:20px}.cc-apartment-hero__consent{font-family:Manrope,sans-serif;font-size:13px;line-height:1.5;margin-top:18px}
+@media(max-width:767px){.cc-apartment-hero{min-height:0;padding:30px 22px 34px}.cc-apartment-hero h1{font-size:29px;line-height:1.2;margin-bottom:24px;white-space:normal}.cc-apartment-hero__lead{font-size:19px;line-height:1.45;margin-bottom:28px}.cc-apartment-hero__detail{font-size:21px;line-height:1.4;margin-bottom:28px}.cc-apartment-hero__fields input,.cc-apartment-hero__fields button{font-size:18px;height:56px}.cc-apartment-hero__consent{font-size:12px;line-height:1.5;margin-top:18px}.cc-apartment-hero__form{width:100%}}
+
+.cc-apartment-hero h1{font-size:34px;line-height:1.2}
+@media(max-width:650px){.cc-apartment-hero h1{font-size:27px;line-height:1.2}}
+</style>
+<main class="blocks"><section class="popular-solutions" aria-labelledby="popular-solutions-title"><h2 id="popular-solutions-title" class="section-gradient"><span>Популярные кейсы для квартиры</span><span class="section-number" aria-hidden="true">01</span></h2><article class="solution-row" data-solution="01"><div class="solution-copy"><p class="solution-area">Для квартир до 70 м²</p><h3>Приточная вентиляционная установка<span>+ Мульти-сплит-система</span></h3><p class="solution-price" aria-describedby="solution-price-note">от <strong>350&nbsp;000&nbsp;₽</strong></p><p>Мульти-сплит-система позволяет подключить несколько настенных внутренних блоков к одному наружному. В сочетании с приточной вентиляцией это доступное и эффективное решение.</p><div class="solution-benefits"><p class="solution-benefits-label">Преимущества</p><ul><li>Постоянная подача свежего воздуха в помещение</li><li>Минимально возможное опускание потолка</li><li>Возможность установки наружного блока в нишу или специализированную корзину</li></ul></div></div><img class="solution-image" src="../assets/image-8f41f6a64487.webp" alt="Приточная вентиляция + мульти-сплит-система с настенными блоками"></article><article class="solution-row" data-solution="02"><div class="solution-copy"><p class="solution-area">Для квартир 70–150 м²</p><h3>Приточно-вытяжная<br>вентиляция<span>+ Канальное кондиционирование</span></h3><p class="solution-price" aria-describedby="solution-price-note">от <strong>500&nbsp;000&nbsp;₽</strong></p><p>Приточно-вытяжная вентиляция обеспечивает полноценный воздухообмен в квартире. Канальное кондиционирование исключает визуальный шум в интерьере за счёт скрытого монтажа.</p><div class="solution-benefits"><p class="solution-benefits-label">Преимущества</p><ul><li>Сбалансированный приток и вытяжка по всей квартире</li><li>Эффективное кондиционирование, интегрированное в дизайн</li><li>Минимальный уровень шума при работе систем</li></ul></div></div><img class="solution-image" src="../assets/image-cb701ec8f840.webp" alt="Приточно-вытяжная вентиляция + канальное кондиционирование"></article><article class="solution-row" data-solution="03"><div class="solution-copy"><p class="solution-area">Для квартир 150–250 м²</p><h3>Приточно-вытяжная система с рекуперацией<span>+ Mini VRF-система</span></h3><p class="solution-price" aria-describedby="solution-price-note">от <strong>900&nbsp;000&nbsp;₽</strong></p><p>Приточно-вытяжная установка с рекуперацией и система кондиционирования Mini VRF сочетают высокую производительность и энергоэффективность. Решение для больших квартир.</p><div class="solution-benefits"><p class="solution-benefits-label">Преимущества</p><ul><li>Снижение затрат электроэнергии на подготовку приточного воздуха</li><li>Широкий диапазон холодопроизводительности Mini VRF</li><li>Увеличенная допустимая длина фреоновых магистралей</li></ul></div></div><img class="solution-image" src="../assets/image-dbe1d50ce126.webp" alt="Приточно-вытяжная вентиляция с рекуперацией + Mini VRF-система"></article><p class="solution-price-note" id="solution-price-note"><strong>Цены ориентировочные.</strong> Окончательная стоимость рассчитывается после детального изучения объекта и выполнения проектных работ.</p>
+<div class="solution-quiz solution-consultation" id="apartment-solution-quiz" aria-label="Консультация по подбору решения"><div class="quiz-intro"><h3>Какое решение подойдёт для вашей квартиры?</h3></div><div class="quiz-main"><div class="quiz-contact-fields"><input type="text" placeholder="Ваше имя" aria-label="Ваше имя" autocomplete="name"><input type="tel" placeholder="Номер телефона" aria-label="Номер телефона" autocomplete="tel"></div><button type="button" class="quiz-submit consultation-submit" disabled>Получить консультацию</button><label class="quiz-consent"><input type="checkbox"><span>Согласен на обработку персональных данных</span></label></div></div></section><h2 class="section-gradient numbered-heading"><span class="heading-copy">Невидимые угрозы в воздухе вашей квартиры</span><span class="section-number" aria-hidden="true">02</span></h2><div class="risks"><article class="risk"><img src="../assets/image-a97995b5a7be.webp" alt=""><h3>CO<sub>2</sub><span>Углекислый газ</span></h3><div class="source"><span class="label">ИСТОЧНИК</span><p><span class="source-line">Дыхание людей при</span> <span class="source-line">недостаточном</span> <span class="source-line">воздухообмене.</span></p></div><div class="effect"><span class="label">КАК ВЛИЯЕТ</span><p>При высоком содержании CO₂ <b>возникает сонливость, снижаются внимание и работоспособность</b>.</p></div></article><article class="risk"><img src="../assets/image-27afb128c7cf.webp" alt=""><h3>PM2,5<span>Мелкие частицы</span></h3><div class="source"><span class="label">ИСТОЧНИК</span><p><span class="source-line">Выхлопные газы, дым, продукты</span> <span class="source-line">горения и приготовление</span> <span class="source-line">пищи.</span></p></div><div class="effect"><span class="label">КАК ВЛИЯЕТ</span><p>Проникают глубоко в лёгкие и способствуют развитию <b>болезней сердца и лёгких</b>.</p></div></article><article class="risk"><img src="../assets/image-d0b343ca3e9c.webp" alt=""><h3>PM10<span>Пыль и аллергены</span></h3><div class="source"><span class="label">ИСТОЧНИК</span><p><span class="source-line">Уличная и домашняя пыль,</span> <span class="source-line">строительная пыль,</span> <span class="source-line">мелкие фрагменты пыльцы.</span></p></div><div class="effect"><span class="label">КАК ВЛИЯЕТ</span><p><span class="effect-line">Раздражают дыхательные</span> <span class="effect-line">пути, усиливают аллергию</span> <span class="effect-line">и могут провоцировать</span> <span class="effect-line"><b>обострения астмы.</b></span></p></div></article><article class="risk"><img src="../assets/image-e43deeb850e7.webp" alt=""><h3>Формальдегид<span>Выделения материалов</span></h3><div class="source"><span class="label">ИСТОЧНИК</span><p><span class="source-line">Некоторые изделия из</span> <span class="source-line">ДСП и МДФ, клеи</span> <span class="source-line">и отделочные покрытия.</span></p></div><div class="effect"><span class="label">КАК ВЛИЯЕТ</span><p>Длительное воздействие в высокой концентрации повышает <b>риск появления онкологии</b>.</p></div></article><article class="risk"><img src="../assets/image-40e5e17e4cfd.webp" alt=""><h3>Перегрев<span>Теплопритоки</span></h3><div class="source"><span class="label">ИСТОЧНИК</span><p>Высокая температура воздуха в летний период и слабое проветривание.</p></div><div class="effect"><span class="label">КАК ВЛИЯЕТ</span><p>Могут появиться слабость и головокружение. Возможны <b>обезвоживание и тепловой удар</b>.</p></div></article></div><section class="comparison"><h2 class="section-gradient section-gradient-from-left numbered-heading"><span class="section-number" aria-hidden="true">03</span><span class="heading-copy">Какие задачи решает каждая система</span></h2><div class="table-wrap"><table aria-label="Сравнение вентиляции и кондиционирования"><thead><tr><th aria-label="Критерий сравнения"></th><th>Без<br>систем</th><th><span class="long">Только<br>кондиционер</span><span class="short">Конди-<br>ционер</span></th><th><span class="long">Только<br>вентиляция</span><span class="short">Венти-<br>ляция</span></th><th><span class="long">Вентиляция +<br>кондиционирование</span><span class="short">Обе<br>системы</span></th></tr></thead><tbody><tr><td>Свежий воздух при закрытых окнах</td><td><span class="status no">×</span></td><td><span class="status no">×</span></td><td><span class="status yes">✓</span></td><td><span class="status yes">✓</span></td></tr><tr><td>Здоровый сон, низкое содержание CO<sub>2</sub></td><td><span class="status no">×</span></td><td><span class="status no">×</span></td><td><span class="status yes">✓</span></td><td><span class="status yes">✓</span></td></tr><tr><td>Фильтрация пыли, аллергенов, PM10 и PM2,5</td><td><span class="status no">×</span></td><td><span class="status no">×</span></td><td><span class="status yes">✓</span></td><td><span class="status yes">✓</span></td></tr><tr><td>Удаление запахов и отработанного воздуха</td><td><span class="status no">×</span></td><td><span class="status no">×</span></td><td><span class="status yes">✓</span></td><td><span class="status yes">✓</span></td></tr><tr><td>Снижение концентрации формальдегида</td><td><span class="status no">×</span></td><td><span class="status no">×</span></td><td><span class="status yes">✓</span></td><td><span class="status yes">✓</span></td></tr><tr><td>Прохлада летом, тепло в межсезонье</td><td><span class="status no">×</span></td><td><span class="status yes">✓</span></td><td><span class="status no">×</span></td><td><span class="status yes">✓</span></td></tr></tbody></table></div></section><section class="worksteps-v2" aria-labelledby="worksteps-title-v2"><h2 id="worksteps-title-v2" class="section-gradient section-gradient-from-left"><span>От плана квартиры до готовой системы</span><span class="section-number" aria-hidden="true">04</span></h2><div class="worksteps-v2-layout"><div class="worksteps-v2-list"><details name="project-stages-v2" data-step-v2="01" open><summary>Ознакомление</summary><div class="worksteps-v2-text"><p><span class="stage-lines-desktop"><span class="stage-line">Выезжаем на объект, изучаем планировку</span> <span class="stage-line">и особенности интерьера.</span></span><span class="stage-lines-mobile"><span class="stage-line">Выезжаем на объект, изучаем планировку</span> <span class="stage-line">и особенности интерьера.</span></span></p><p><span class="stage-lines-desktop"><span class="stage-line">Определяем задачи и готовим</span> <span class="stage-line">предварительный расчёт.</span></span><span class="stage-lines-mobile"><span class="stage-line">Определяем задачи и готовим</span> <span class="stage-line">предварительный расчёт.</span></span></p><div class="stage-photo-clip"><img class="worksteps-v2-mobile-photo" src="../assets/image-27f1cb274e15.webp" alt="Ознакомление"></div></div></details><details name="project-stages-v2" data-step-v2="02"><summary>Проектирование</summary><div class="worksteps-v2-text"><p><span class="stage-lines-desktop"><span class="stage-line">Определяем состав системы, выполняем расчёты</span> <span class="stage-line">и подбираем оборудование.</span></span><span class="stage-lines-mobile"><span class="stage-line">Определяем состав системы, выполняем</span> <span class="stage-line">расчёты и подбираем оборудование.</span></span></p><p><span class="stage-lines-desktop"><span class="stage-line">Интегрируем решение в концепцию интерьера</span> <span class="stage-line">и составляем смету.</span></span><span class="stage-lines-mobile"><span class="stage-line">Интегрируем решение в концепцию</span> <span class="stage-line">интерьера и составляем смету.</span></span></p><div class="stage-photo-clip"><img class="worksteps-v2-mobile-photo" src="../assets/image-6b74506e1b9a.webp" alt="Проектирование"></div></div></details><details name="project-stages-v2" data-step-v2="03"><summary>Реализация</summary><div class="worksteps-v2-text"><p><span class="stage-lines-desktop"><span class="stage-line">Монтируем системы вентиляции</span> <span class="stage-line">и кондиционирования.</span></span><span class="stage-lines-mobile"><span class="stage-line">Монтируем системы вентиляции</span> <span class="stage-line">и кондиционирования.</span></span></p><p><span class="stage-lines-desktop"><span class="stage-line">Выполняем пусконаладочные работы,</span> <span class="stage-line">проверяем и настраиваем оборудование.</span></span><span class="stage-lines-mobile"><span class="stage-line">Выполняем пусконаладочные работы,</span> <span class="stage-line">проверяем и настраиваем оборудование.</span></span></p><div class="stage-photo-clip"><img class="worksteps-v2-mobile-photo" src="../assets/image-6b73437ce6d7.webp" alt="Реализация"></div></div></details><details name="project-stages-v2" data-step-v2="04"><summary>Гарантия</summary><div class="worksteps-v2-text"><p><span class="stage-lines-desktop"><span class="stage-line">Предоставляем гарантию на оборудование</span> <span class="stage-line">и выполненные работы.</span></span><span class="stage-lines-mobile"><span class="stage-line">Предоставляем гарантию на оборудование</span> <span class="stage-line">и выполненные работы.</span></span></p><p><span class="stage-lines-desktop"><span class="stage-line">Консультируем по эксплуатации</span> <span class="stage-line">и проводим техническое обслуживание.</span></span><span class="stage-lines-mobile"><span class="stage-line">Консультируем по эксплуатации</span> <span class="stage-line">и проводим техническое обслуживание.</span></span></p><div class="stage-photo-clip"><img class="worksteps-v2-mobile-photo" src="../assets/image-fef0591d60a5.webp" alt="Гарантия"></div></div></details></div><div class="worksteps-v2-photos"><img class="worksteps-v2-photo" data-step-photo-v2="01" src="../assets/image-27f1cb274e15.webp" alt="Ознакомление"><img class="worksteps-v2-photo" data-step-photo-v2="02" src="../assets/image-6b74506e1b9a.webp" alt="Проектирование" hidden><img class="worksteps-v2-photo" data-step-photo-v2="03" src="../assets/image-6b73437ce6d7.webp" alt="Реализация" hidden><img class="worksteps-v2-photo" data-step-photo-v2="04" src="../assets/image-fef0591d60a5.webp" alt="Гарантия" hidden></div></div></section><section class="apartment-portfolio" aria-labelledby="apartment-portfolio-title">
+  <h2 id="apartment-portfolio-title" class="section-gradient"><span>Наши работы</span><span class="section-number" aria-hidden="true">05</span></h2>
+  <div class="portfolio-grid"><article class="portfolio-card">
+  <img src="https://climatecity.pro/img/cms/zk-gorod-jaht/zk-gorod-jaht-climatecity.webp" alt="" loading="lazy" width="600" height="350">
+  <div class="portfolio-copy">
+    <h3><a href="https://climatecity.pro/content/18-montazh-ventilyacii-i-kanalnogo-kondicionirovaniya-v-zhk-gorod-yakht">ЖК «Город Яхт»</a></h3>
+    <p>Монтаж вентиляции и канального кондиционирования</p>
+    <a class="portfolio-link" href="https://climatecity.pro/content/18-montazh-ventilyacii-i-kanalnogo-kondicionirovaniya-v-zhk-gorod-yakht" aria-label="Смотреть проект ЖК «Город Яхт»">Смотреть проект →</a>
+  </div>
+</article><article class="portfolio-card">
+  <img src="https://climatecity.pro/img/cms/zk-jazz/zk-jazz-magazin-plitki-climatecity.webp" alt="" loading="lazy" width="600" height="350">
+  <div class="portfolio-copy">
+    <h3><a href="https://climatecity.pro/content/17-zhk-jazz-magazin-plitki-montazh-ventilyacii-kondicionirovaniya-i-osusheniya">ЖК JAZZ · магазин плитки</a></h3>
+    <p>Монтаж вентиляции, кондиционирования и осушения</p>
+    <a class="portfolio-link" href="https://climatecity.pro/content/17-zhk-jazz-magazin-plitki-montazh-ventilyacii-kondicionirovaniya-i-osusheniya" aria-label="Смотреть проект ЖК JAZZ · магазин плитки">Смотреть проект →</a>
+  </div>
+</article></div>
+  <a class="portfolio-link portfolio-all" href="https://climatecity.pro/content/category/3-nashi-raboty">Все работы →</a>
+</section>
+<section id="apartment-faq" class="apartment-end-section apartment-faq" aria-labelledby="apartment-faq-title">
+  <h2 id="apartment-faq-title" class="section-gradient section-gradient-from-left"><span class="section-number" aria-hidden="true">06</span><span>FAQ</span></h2>
+</section>
+<section id="apartment-contacts" class="apartment-end-section" aria-labelledby="apartment-contacts-title">
+  <h2 id="apartment-contacts-title" class="section-gradient"><span>Контакты</span><span class="section-number" aria-hidden="true">07</span></h2>
+  <address class="apartment-contact-panel">
+    <div>
+      <h3>Шоурум ClimateCity</h3>
+      <p>Москва, Ратная улица, д. 16к3, 2 этаж</p>
+      <p>Пн–пт, 10:00–19:00. В выходные по предварительной записи.</p>
+    </div>
+    <div class="apartment-contact-links">
+      <a href="tel:+74956665646">+7 (495) 666-56-46</a>
+      <a href="mailto:info@climatecity.pro">info@climatecity.pro</a>
+    </div>
+  </address>
+</section>
+</main><script>(function(){
+var steps=Array.from(document.querySelectorAll('.worksteps-v2-list [data-step-v2]'));
+if(!steps.length)return;
+var active=steps.find(function(step){return step.open})||steps[0];
+function selectStage(next){
+ active=next;
+ steps.forEach(function(step){step.open=step===next;var summary=step.querySelector('summary');if(summary)summary.setAttribute('aria-expanded',String(step===next))});
+ document.querySelectorAll('[data-step-photo-v2]').forEach(function(photo){photo.hidden=photo.dataset.stepPhotoV2!==next.dataset.stepV2});
+}
+steps.forEach(function(step){
+ step.querySelector('summary').addEventListener('click',function(event){event.preventDefault();if(step!==active||!step.open)selectStage(step)});
+ step.addEventListener('toggle',function(){
+  if(step.open&&step!==active){selectStage(step);return}
+  if(!steps.some(function(item){return item.open}))selectStage(active);
+ });
+});
+selectStage(active);
+})();</script><script>(function(){var layout=document.querySelector('.worksteps-v2-layout');var list=document.querySelector('.worksteps-v2-list');if(!layout||!list)return;function syncStagePhoto(){if(window.innerWidth<=650){layout.style.removeProperty('--stage-photo-size');return}var gap=parseFloat(getComputedStyle(layout).columnGap)||64;var available=(layout.clientWidth-gap)/2;var size=Math.min(list.getBoundingClientRect().height,available);layout.style.setProperty('--stage-photo-size',size+'px')}new ResizeObserver(syncStagePhoto).observe(list);window.addEventListener('resize',syncStagePhoto);if(document.fonts)document.fonts.ready.then(syncStagePhoto);syncStagePhoto()})();</script>
+<style id="font-lab-styles">
+@font-face{font-family:PreviewArtifakt;src:local('Artifakt Element Bold');font-weight:700}
+:root{--preview-heading:Bahnschrift,'Arial Narrow',sans-serif;--preview-body:'Segoe UI',Arial,sans-serif}
+body,.cc-apartment-hero,.cc-apartment-hero__lead,.cc-apartment-hero__detail,.cc-apartment-hero__consent,.cc-apartment-hero__fields input,.cc-apartment-hero__fields button,.risk p,.risk h3 span,table,.solution-copy,.worksteps-v2-text{font-family:var(--preview-body)!important}
+h1,h2,h3,.solution-copy h3,.worksteps-v2-list summary{font-family:var(--preview-heading)!important;letter-spacing:-.025em;font-weight:700}
+.cc-apartment-hero h1,h2{font-size:36px!important;line-height:1.2!important}
+.cc-apartment-hero__lead strong,.cc-apartment-hero__lead b{font-family:inherit!important;font-size:inherit!important;line-height:inherit!important;vertical-align:baseline!important;position:static!important;display:inline!important;transform:none!important;font-weight:700}
+.cc-apartment-hero__detail{font-weight:600!important}
+.section-number{font-family:var(--preview-heading)!important}
+#font-lab{position:fixed;right:20px;bottom:20px;z-index:2147483647;max-width:calc(100vw - 32px);padding:16px 18px;background:#fff;color:#25272b;border:1px solid #dedfe2;border-radius:14px;box-shadow:0 8px 35px #0002;font:14px/1.4 'Segoe UI',Arial,sans-serif}
+#font-lab label{display:block;font-weight:600;margin-bottom:8px}#font-lab select{width:300px;max-width:100%;font:14px 'Segoe UI',Arial,sans-serif;padding:10px 28px 10px 10px;background:#f5f5f6;border:1px solid #d7d9dd;border-radius:6px;color:#25272b}
+#font-lab small{display:block;margin-top:7px;color:#73777e;font-size:11px}#font-lab button{position:absolute;right:10px;top:8px;border:0;background:none;color:#72767c;font-size:18px;cursor:pointer}
+@media(max-width:767px){.cc-apartment-hero h1,h2{font-size:29px!important}#font-lab{right:12px;bottom:12px;padding:12px 14px}#font-lab select{width:270px}}
+</style>
+
+<aside id="font-lab" aria-label="Сравнение шрифтов"><button type="button" id="font-lab-hide" aria-label="Скрыть панель">×</button><label for="font-choice">Примеряем шрифты</label><select id="font-choice">
+<option value="engineering">01 · Bahnschrift — инженерный</option>
+<option value="artifakt">02 · Artifakt — архитектурный</option>
+<option value="editorial">03 · Georgia — журнальный</option>
+<option value="clean">04 · Segoe UI — спокойный</option>
+<option value="original">05 · Manrope — прежний вариант</option>
+</select><small>Переключается на всей странице · макет</small></aside>
+<script>
+(()=>{const pairs={engineering:['Bahnschrift, "Arial Narrow", sans-serif','"Segoe UI", Arial, sans-serif'],artifakt:['PreviewArtifakt, "Artifakt Element", sans-serif','"Segoe UI", Arial, sans-serif'],editorial:['Georgia, serif','"Segoe UI", Arial, sans-serif'],clean:['"Segoe UI", Arial, sans-serif','"Segoe UI", Arial, sans-serif'],original:['Manrope, sans-serif','Manrope, sans-serif']};const select=document.getElementById('font-choice');function apply(){const pair=pairs[select.value];document.documentElement.style.setProperty('--preview-heading',pair[0]);document.documentElement.style.setProperty('--preview-body',pair[1]);window.dispatchEvent(new Event('resize'));document.fonts.ready.then(()=>window.dispatchEvent(new Event('resize')))}select.addEventListener('change',apply);document.getElementById('font-lab-hide').addEventListener('click',()=>document.getElementById('font-lab').remove());apply()})();
+</script>
+
+<style id="compact-sections-20261105">
+.popular-solutions,.worksteps-v2{margin-top:36px;padding-top:32px}
+.solution-row{grid-template-columns:minmax(0,1fr) 380px;gap:64px;padding:20px 0}
+.solution-row:nth-child(odd){grid-template-columns:380px minmax(0,1fr)}
+.solution-row+.solution-row{margin-top:8px;padding-top:28px}
+.solution-copy{max-width:620px}.solution-copy h3{font-size:23px;line-height:1.3;margin-bottom:16px}
+.solution-copy h3 span{font-size:18px;line-height:1.4;margin-top:5px}
+.solution-copy>p{font-size:14px;line-height:1.65;margin-bottom:16px}
+.solution-copy li{font-size:13px;line-height:1.5;padding:8px 0 8px 17px}.solution-copy li:before{top:16px}
+.solution-image{width:100%;max-width:380px;aspect-ratio:1/1}
+.worksteps-v2-list summary{font-size:21px;padding:14px 0;line-height:1.3}
+.worksteps-v2-text{padding:0 24px 18px 0}.worksteps-v2-text p{font-size:14px;line-height:1.6}
+@media(min-width:651px) and (max-width:950px){.solution-row,.solution-row:nth-child(odd){grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}.solution-copy h3{font-size:21px}.solution-copy h3 span{font-size:17px}.worksteps-v2-list summary{font-size:20px}}
+@media(max-width:650px){
+.popular-solutions,.worksteps-v2{margin-top:28px;padding-top:24px}
+.solution-row,.solution-row:nth-child(odd){display:flex;gap:0;padding:6px 0 22px}
+.solution-row+.solution-row{margin-top:0;padding-top:22px}
+.solution-copy h3{font-size:20px;line-height:1.3;margin-bottom:14px}.solution-copy h3 span{font-size:16px;line-height:1.4;margin-top:5px}
+.solution-image{width:280px;max-width:100%;align-self:center;margin:0 auto 16px;aspect-ratio:1/1}
+.solution-copy>p{font-size:13px;line-height:1.6;margin-bottom:12px}.solution-copy li{font-size:12.5px;padding:8px 0 8px 17px}
+.worksteps-v2-list summary{font-size:20px;padding:14px 0}.worksteps-v2-text{padding:0 0 16px}.worksteps-v2-text p{font-size:13px;line-height:1.6}
+.worksteps-v2-mobile-photo{width:280px;max-width:100%;height:280px!important;margin:14px auto 0;aspect-ratio:1/1}
+.stage-photo-clip{width:280px;max-width:100%;height:280px;margin:14px auto 0}.stage-photo-clip .worksteps-v2-mobile-photo{margin:0}
+}
+</style>
+<style id="stage-number-left-20261105">.worksteps-v2>h2 .section-number{order:-1}.worksteps-v2>h2 .heading-copy{margin-left:auto;text-align:right}.worksteps-v2>h2{text-align:right}</style><style id="solution-areas-20261105">.solution-copy>.solution-area{display:inline-flex;align-items:center;align-self:flex-start;width:fit-content;color:#2e2f33;background:#f8f1f3;border:1px solid #eee2e6;border-radius:5px;padding:5px 10px;margin:0 0 13px;font-family:var(--preview-body,'Segoe UI',sans-serif);font-size:12px;font-weight:600;line-height:1.3;letter-spacing:.02em}@media(max-width:650px){.solution-copy>.solution-area{order:-1;margin-bottom:11px;font-size:11px}}</style><style id="solution-description-size-20261105">.solution-copy>p:not(.solution-area){font-size:18px;line-height:1.6}@media(max-width:650px){.solution-copy>p:not(.solution-area){font-size:16px;line-height:1.6}}</style><style id="section-numbers-bold-20261105">.section-number{font-size:40px!important;font-weight:700!important;line-height:1!important;color:#8d9197;letter-spacing:-.04em}@media(max-width:650px){.section-number{font-size:30px!important;font-weight:700!important;padding-top:2px}}</style><style id="solution-quiz-style">
+.solution-quiz{margin-top:24px;padding:32px;border:1px solid #e1e3e6;border-radius:12px;background:#f8f9fa;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:start}
+.solution-quiz h3{font-size:28px;line-height:1.2;margin:10px 0 14px;font-family:var(--preview-heading,Bahnschrift,sans-serif)}
+.solution-quiz .quiz-intro p{font-size:15px;line-height:1.6;color:#73777e;max-width:320px;margin:0}
+.quiz-eyebrow{font:600 10px/1.4 var(--preview-body,'Segoe UI',sans-serif);letter-spacing:1.5px;color:#2e2f33;text-transform:uppercase}
+.quiz-progress-row{display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:12px;color:#85898e;margin-bottom:10px}.quiz-progress-track{height:3px;background:#e4e6e8;border-radius:3px;overflow:hidden;margin-bottom:24px}.quiz-progress-fill{height:100%;width:33.333%;background:#8c0a2b;transition:width .2s}
+.quiz-step[hidden]{display:none!important}.quiz-step{margin:0;padding:0;border:0;min-width:0}.quiz-step legend,.quiz-contact-title{font-size:20px;font-weight:600;line-height:1.3;margin-bottom:18px;padding:0}
+.quiz-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.quiz-option{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px 10px;min-height:60px;border:1px solid #dadde1;border-radius:7px;background:white;cursor:pointer;font-size:14px;line-height:1.4;transition:border-color .15s,background .15s}.quiz-option:has(input:checked){border-color:#8c0a2b;background:#f8eef1;color:#2e2f33}.quiz-option:focus-within{outline:2px solid #8c0a2b;outline-offset:2px}.quiz-option input{position:absolute;width:1px;height:1px;opacity:0}.quiz-options.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;margin-top:22px;gap:16px}.solution-quiz button{font-family:var(--preview-body,'Segoe UI',sans-serif);cursor:pointer}.quiz-next,.quiz-submit{font-size:14px;font-weight:600;padding:12px 24px;min-height:44px;border:0;border-radius:6px;background:#eaa760;color:#24272b}.quiz-next:disabled{background:#e5e7e9;color:#94989d;cursor:default}.quiz-back{font-size:13px;color:#747981;background:none;border:0;padding:10px 0}.quiz-back:disabled{visibility:hidden}.quiz-contact-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quiz-contact-fields input{min-width:0;width:100%;height:48px;padding:0 14px;font:14px var(--preview-body,'Segoe UI',sans-serif);border:1px solid #dadde1;border-radius:6px;background:white}.quiz-consent{display:flex;align-items:flex-start;gap:8px;font-size:11px;color:#747981;line-height:1.5;margin-top:14px}.quiz-consent input{margin:2px 0 0;flex:none}.quiz-consent a{color:inherit}.quiz-submit:disabled{cursor:default;opacity:1}.quiz-contact-title{display:block}
+@media(max-width:650px){.solution-quiz{grid-template-columns:1fr;gap:24px;padding:22px 18px;margin-top:14px}.solution-quiz h3{font-size:24px;margin:8px 0 10px}.solution-quiz .quiz-intro p{font-size:13px}.quiz-progress-track{margin-bottom:20px}.quiz-step legend,.quiz-contact-title{font-size:18px;margin-bottom:14px}.quiz-options{gap:7px}.quiz-option{font-size:12px;min-height:58px;padding:12px 6px}.quiz-contact-fields{grid-template-columns:1fr}.quiz-nav{margin-top:18px}}
+</style><style id="simple-consultation-20261105">.solution-consultation{align-items:center}.solution-consultation h3{margin:0;font-size:28px;line-height:1.25}.solution-consultation .quiz-main{display:grid;grid-template-columns:1fr}.solution-consultation .consultation-submit{justify-self:start;margin-top:12px;min-height:46px}.solution-consultation .quiz-consent{margin-top:12px}@media(max-width:650px){.solution-consultation{gap:20px}.solution-consultation h3{font-size:24px}.solution-consultation .consultation-submit{justify-self:stretch;width:100%}}</style><style id="consultation-single-row-20261105">
+@media(min-width:651px){.solution-consultation{grid-template-columns:1fr;gap:22px}.solution-consultation h3{font-size:28px}.solution-consultation .quiz-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:12px;align-items:start}.solution-consultation .quiz-contact-fields{display:contents}.solution-consultation .quiz-contact-fields input{height:50px}.solution-consultation .consultation-submit{margin:0;min-height:50px;white-space:nowrap;padding:12px 28px}.solution-consultation .quiz-consent{grid-column:1/-1;margin:0}}
+</style><style id="risk-photos-grayscale-20261106">.risks>.risk>img{filter:grayscale(100%)}</style><style id="numbered-section-gradients">
+h2.section-gradient {
+  position: relative;
+  padding-bottom: 18px;
+  --line-direction: to left;
+}
+h2.section-gradient-from-left {
+  --line-direction: to right;
+}
+h2.section-gradient::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(var(--line-direction), #8c0a2b 0%, #b78794 26%, #e1e3e6 75%);
+}
+@media (max-width: 650px) {
+  h2.section-gradient { padding-bottom: 13px; }
+}
+</style>
+<style id="minimum-text-size">
+.label, .risk h3 span, .risk .effect p, .risk sub,
+table, thead th, th:first-child, .notes,
+.worksteps-v2-text p, .step-body p, .worksteps-mobile summary span,
+.solution-copy li, .solution-copy > .solution-area,
+.cc-apartment-hero__consent, .quiz-consent, #font-lab small {
+  font-size: max(13px, 1em);
+}
+.label, .risk h3 span, .risk sub, .risk .effect p { font-size: 13px; }
+.label { letter-spacing: .04em; }
+@media (min-width: 651px) {
+  .risk { grid-template-rows: 116px minmax(82px, auto) minmax(112px, auto) minmax(132px, auto); }
+  .risk .source-line, .risk .effect-line { white-space: normal; }
+}
+@media (max-width: 650px) {
+  thead th { overflow-wrap: anywhere; }
+}
+</style>
+<style id="apartment-portfolio-styles">
+.apartment-portfolio { margin-top: 36px; padding-top: 32px; border-top: 1px solid #e1e3e6; }
+.apartment-portfolio > h2 { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.portfolio-card { display: flex; flex-direction: column; overflow: hidden; border: 1px solid #e1e3e6; border-radius: 12px; background: #fff; }
+.portfolio-card img { display: block; width: 100%; height: auto; aspect-ratio: 12/7; object-fit: cover; background: #f3f4f5; }
+.portfolio-copy { flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 20px; }
+.portfolio-copy h3 { font-size: 22px; line-height: 1.25; }
+.portfolio-copy h3 a { color: inherit; text-decoration: none; }
+.portfolio-copy p { margin: 0 0 6px; font-size: 15px; line-height: 1.55; color: #535960; }
+.portfolio-link { color: #2e2f33; font-size: 14px; font-weight: 700; text-decoration: none; }
+.portfolio-copy .portfolio-link { margin-top: auto; align-self: flex-start; }
+.portfolio-link:hover, .portfolio-copy h3 a:hover { text-decoration: underline; }
+.portfolio-all { display: inline-block; margin-top: 20px; }
+@media (max-width: 650px) {
+  .apartment-portfolio { margin-top: 28px; padding-top: 24px; }
+  .apartment-portfolio > h2 { align-items: flex-start; }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 14px; }
+  .portfolio-copy { padding: 16px; }
+  .portfolio-copy h3 { font-size: 20px; }
+}
+</style>
+<style id="white-comparison-header">
+.comparison thead th { background: #fff; }
+.comparison thead th:last-child::before { content: none; }
+</style>
+<style id="comparison-plain-marks">.comparison .status { background: transparent; border-radius: 0; }</style><style id="first-solution-benefits">
+.solution-benefits {
+  padding: 14px 16px;
+  border: 1px solid #e1e3e6;
+  border-radius: 8px;
+  background: #f6f7f8;
+}
+.solution-benefits .solution-benefits-label {
+  margin: 0 0 5px;
+  color: #2e2f33;
+  font-size: 14px;
+  font-weight: 700;
+}
+.solution-benefits li {
+  color: #2e2f33;
+  font-size: 14px;
+  font-weight: 600;
+}
+.solution-benefits li:first-child { border-top: 0; }
+.solution-benefits li::before { background: #696f76; }
+@media (max-width: 650px) {
+  .solution-benefits { order: 3; }
+}
+</style>
+<style id="design-preview">
+
+body { background: var(--paper); color: var(--ink); }
+.blocks { padding-top: clamp(34px, 6vw, 80px); }
+.blocks h2 { color: var(--ink); }
+h2.section-gradient::after {
+  background: linear-gradient(var(--line-direction), var(--accent), var(--rule) 70%);
+}
+.risk,.portfolio-card,.solution-benefits,.solution-quiz { background: var(--panel); border-color: var(--rule); }
+.risk p,.risk b,.portfolio-copy p,.solution-benefits li,.solution-benefits .solution-benefits-label,.portfolio-link { color: var(--ink); }
+.label,.solution-copy h3 span { color: var(--muted); }
+.risk .effect { border-color: var(--rule); }
+.comparison,.popular-solutions,.worksteps-v2,.apartment-portfolio,.solution-row+.solution-row { border-color: var(--rule); }
+.cc-apartment-hero h1 { font-size: clamp(32px, 4vw, 58px) !important; line-height: 1.08 !important; text-wrap: balance; white-space: normal !important; }
+.cc-apartment-hero__lead,.cc-apartment-hero__detail { text-wrap: pretty; }
+.cc-apartment-hero__desktop-break { display: none; }
+@media (max-width: 650px) {
+  .cc-apartment-hero h1 { font-size: clamp(29px, 8vw, 37px) !important; }
+}
+
+:root { --paper:#191d20; --panel:#252a2e; --ink:#f2f1eb; --muted:#c2c6c7; --rule:#42494e; --accent:#eaa760; }
+.cc-apartment-hero { min-height:690px; }
+.cc-apartment-hero::after { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#14191de8,#14191db3 49%,#14191d1a); }
+.cc-apartment-hero h1 { max-width:890px; }
+.cc-apartment-hero__lead,.cc-apartment-hero__detail { max-width:670px; }
+.cc-apartment-hero__detail { font-size:20px; font-weight:400; }
+.section-number { color:#eaa760; }
+.risk { border-radius:8px; }
+.comparison table,.comparison thead th { background:var(--panel); color:var(--ink); }
+.comparison table,.comparison th,.comparison td,.solution-benefits li { border-color:var(--rule); }
+.comparison .status.yes { color:#88d5ad; }
+.comparison .status.no { color:#f39a9a; }
+.worksteps-v2-list details,.worksteps-v2-list summary { border-color:var(--rule); color:var(--ink); }
+.solution-area { background:#383029; color:#eaa760; border-color:#635141; }
+.portfolio-card img { background:#343b40; }
+@media(max-width:650px) { .cc-apartment-hero { min-height:0; }.cc-apartment-hero::after { background:#14191dbc; } }
+</style>
+
+<style id="graphite-editorial-layout">
+.cc-apartment-hero {
+  width: min(calc(100% - 36px), 1380px);
+  min-height: 600px;
+  margin: 18px auto 0;
+  border: 1px solid #42494e;
+  border-radius: 18px;
+}
+.cc-apartment-hero::after {
+  background: linear-gradient(90deg, #14252be8, #14252baa 55%, #14252b24);
+}
+.popular-solutions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.popular-solutions > h2,
+.popular-solutions > .solution-consultation { grid-column: 1 / -1; }
+.popular-solutions > h2 { margin-bottom: 8px; }
+.popular-solutions > .solution-row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--panel);
+}
+.popular-solutions .solution-image {
+  order: -1;
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 4 / 3;
+  border-radius: 0;
+  margin: 0;
+}
+.popular-solutions .solution-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+.popular-solutions .solution-copy > p:not(.solution-area) { font-size: 15px; }
+.popular-solutions .solution-benefits { margin-top: auto; background: var(--paper); }
+.popular-solutions .solution-consultation { margin-top: 4px; }
+@media (max-width: 950px) {
+  .popular-solutions { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .popular-solutions .solution-image { aspect-ratio: 16 / 9; }
+}
+@media (max-width: 650px) {
+  .cc-apartment-hero { width: calc(100% - 24px); min-height: 0; margin-top: 12px; border-radius: 12px; }
+  .cc-apartment-hero::after { background: #14252bbd; }
+  .popular-solutions .solution-copy { padding: 16px; }
+  .popular-solutions .solution-image { aspect-ratio: 4 / 3; }
+}
+</style>
+<style id="white-solution-subtitles">.popular-solutions .solution-copy h3 > span { color: #fff; }</style>
+<style id="graphite-hero-detail-size">
+.cc-apartment-hero .cc-apartment-hero__detail {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.32;
+}
+@media (max-width: 650px) {
+  .cc-apartment-hero .cc-apartment-hero__detail { font-size: 23px; }
+}
+</style><style id="graphite-risk-and-stage-accents">
+.risk .effect {
+  padding: 12px 10px;
+  border: 1px solid #45413a;
+  border-radius: 6px;
+  background: #302d29;
+}
+.risk .effect .label { color: #eaa760; font-weight: 700; }
+.worksteps-v2 .worksteps-v2-list details[open] > summary,
+.worksteps-v2 .worksteps-v2-list details[open] > summary::after {
+  color: #eaa760;
+}
+.worksteps-v2 .worksteps-v2-list details:not([open]) > summary:hover {
+  color: #eaa760;
+}
+</style>
+<style id="graphite-alignment">
+.comparison tbody tr:hover td { background: transparent; }
+@media (min-width: 651px) {
+  .risks {
+    grid-template-rows: minmax(116px, auto) minmax(64px, auto) minmax(112px, auto) auto;
+    row-gap: 0;
+  }
+  .risks > .risk {
+    grid-row: span 4;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+}
+</style>
+<style id="graphite-four-line-effects">
+.popular-solutions .solution-copy h3 { color: #eaa760; }
+@media (min-width: 651px) {
+  .risks > .risk > .effect {
+    padding-inline: 8px;
+    min-height: calc(13px * 1.6 * 4 + 18.2px + 8px + 24px + 2px);
+  }
+  .risks > .risk > .effect p {
+    line-height: 1.6;
+    text-wrap: wrap;
+  }
+  .risks > .risk > .effect .effect-line { display: inline; }
+}
+@media (min-width: 1150px) {
+  .risks > .risk:nth-child(4) > .effect p { letter-spacing: -.15px; }
+}
+</style>
+<style id="graphite-bold-effects">.risks > .risk > .effect p { font-weight: 700; }</style>
+<style id="solution-pricing">
+.popular-solutions .solution-row .solution-copy > p.solution-price {
+  margin: 0 0 12px;
+  font-family: var(--preview-heading, Bahnschrift, sans-serif);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #eaa760;
+}
+.solution-price strong { font-size: inherit; font-weight: inherit; }
+@media (min-width: 651px) and (max-width: 950px) {
+  .popular-solutions .solution-row .solution-copy > p.solution-price { font-size: 21px; }
+}
+@media (max-width: 650px) {
+  .popular-solutions .solution-row .solution-copy > p.solution-price { font-size: 20px; }
+}
+.solution-price-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 12px 16px;
+  border-left: 2px solid #eaa760;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.55;
+}
+</style>
+<style id="compact-risk-title-gap">
+@media (min-width: 651px) {
+  .risks > .risk > h3 span { min-height: 0; }
+  .risks > .risk > .source { padding-top: 8px; }
+}
+@media (max-width: 650px) {
+  .risks > .risk > .source { padding-top: 8px; }
+}
+</style><style id="apartment-end-sections">
+.apartment-end-section { margin-top: 36px; }
+.apartment-end-section > h2 { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; }
+.apartment-faq > h2 { margin-bottom: 0; }
+.apartment-contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  padding: clamp(16px, 3vw, 32px);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--panel);
+  font-style: normal;
+}
+.apartment-contact-panel h3 { margin-bottom: 8px; font-size: 22px; }
+.apartment-contact-panel p + p { margin-top: 6px; color: var(--muted); }
+.apartment-contact-links { display: grid; align-content: start; gap: 8px; }
+.apartment-contact-links a { color: var(--ink); font-size: 18px; overflow-wrap: anywhere; text-underline-offset: 4px; }
+.apartment-contact-links a:hover { color: var(--accent); }
+@media (max-width: 650px) {
+  .apartment-end-section { margin-top: 28px; }
+  .apartment-contact-panel { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+</style>
+</html>
